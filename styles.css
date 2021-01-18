@@ -1,7 +1,69 @@
-a, p, button {
-    font-family: 'Roboto', sans-serif;
+body{
+    margin: 0;
 }
 
-h1, div{
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
     font-family:'PT Serif', serif;
+    font-size: 24px;
+    padding: 40px 0;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu__item{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 0 13px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu__item_active{
+    text-decoration: underline 2px #0056EC;
+}
+
+.menu__item:last-child{
+    padding-right: 0;
+}
+
+.main-content__title{
+    font-family:'PT Serif', serif;
+    font-size: 50px;
+    padding-top: 10%;
+    width: 43%;
+    margin: 0;
+}
+
+.main-content__description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 40px 0;
+    width: 36%;
+    margin: 0;
+}
+
+.main-content__button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    width: 209px;
+    height: 44px;
+    background-color: #0056EC;
+    color: white;
+    border: 0;
+    padding: 0;
+    margin-bottom: 193px;
+    border-radius: 4px;
 }
