@@ -84,7 +84,7 @@ body{
 .main{
     padding-top: 206px;
     background: top right no-repeat url(images/mainImg.svg);
-    background-size: 770px 657px;
+    background-size: 50% auto;
     background-position-y: 40%;
     padding-bottom: 25%;
 }
@@ -109,6 +109,12 @@ body{
     margin: 0 0 41px 0;
 }
 
+@keyframes button-transform{
+    to{
+        transform: scale(1.05);
+    }
+}
+
 .main__button{
     font-family: 'Roboto', sans-serif;
     display: inline-block;
@@ -119,11 +125,17 @@ body{
     text-decoration: none;
     border-radius: 4px;
     padding: 14px 16px;
-    transition: 0.1s;
+    animation-name: button-transform;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
 }
 
 .main__button:hover{
-    transform: scale(1.1);
+    animation-play-state: paused;
 }
 
 .hamburger-menu{
@@ -334,7 +346,11 @@ body{
     }
 }
 
-@media(min-width: 1366px) and (max-width:1920px){
+@media(min-width: 1366px) and (max-width:1919px){
+    .wrapper{
+        width: 68%;
+    }
+
     .menu__item{
         font-size: 14px;
         line-height: 16px;
@@ -342,17 +358,19 @@ body{
 
     .main{
         padding-top: 100px;
-        background-size: 60% auto;
+        background-size: 55% auto;
         background-position-y: 30%;
     }
 
     .main__title{
         font: bold 50px/66px PT-Serif, serif;
+        padding-right: 52%;
     }
 
     .main__description{
         font-size: 18px;
         line-height: 21px;
+        width: 40%;
     }
 
     .main__button{
