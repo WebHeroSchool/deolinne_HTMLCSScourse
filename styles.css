@@ -324,7 +324,7 @@ body{
     }
 }
 
-@media(min-width:1023px) and (max-width: 1366px){
+@media(min-width:1024px) and (max-width: 1366px){
     .wrapper{
         width: 91%;
     }
@@ -343,11 +343,13 @@ body{
 
     .main__title{
         font: bold 50px/66px PT-Serif, serif;
+        padding-right: 53%;
     }
 
     .main__description{
         font-size: 18px;
         line-height: 21px;
+        width: 37%;
     }
 
     .main__button{
